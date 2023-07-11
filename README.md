@@ -9,6 +9,13 @@ Related documentation at https://jacobegner.wordpress.com/2023/06/21/talon-voice
 - Go to `C:\Users\MyUsername\AppData\Roaming\Talon` (Talon system tray icon => Scripting => Open ~/.talon) and launch a terminal.
 - `git clone --recurse-submodules https://github.com/jmegner/talon-user.git user`
 
+The above command seems to put the submodule .git folders as `user/.git/modules/MODULE_NAME/` folders.  Each `user/MODULE_NAME/.git` seems to be a text file that has contents `gitdir: ../.git/modules/MODULE_NAME/` (and newline char at end).
+
+TODO: figure out how to do a recursive clone without the weird `user/.git/modules/MODULE_NAME/` folders.  Maybe do a `git clone && git submodule update --recursive --init --remote --merge`.
+
+TODO: figure out how to get all submodules on the appropriate branches instead of detached heads; the branches are listed inside `.gitmodules` but don't seem to be used by the recursive clone.
+Running `git pull && git submodule update --recursive --init --remote --merge` does not help.
+
 ## Usage
 
 If you have made changes in this repo and/or the submodules, then run:
