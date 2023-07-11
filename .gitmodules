@@ -1,12 +1,20 @@
 [submodule "rango-talon"]
 	path = rango-talon
 	url = https://github.com/david-tejada/rango-talon
+	branch = main
+	update = merge
 [submodule "talon-filetree-commands"]
 	path = talon-filetree-commands
 	url = https://github.com/paul-schaaf/talon-filetree-commands.git
+	branch = master
+	update = merge
 [submodule "cursorless-talon"]
 	path = cursorless-talon
 	url = https://github.com/cursorless-dev/cursorless-talon.git
+	branch = main
+	update = merge
 [submodule "talon-config-jme"]
 	path = talon-config-jme
 	url = https://github.com/jmegner/talon-config-jme.git
+	branch = main
+	update = merge
