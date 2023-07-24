@@ -1,6 +1,7 @@
 # talon-user
 
-For Talon user folder where each subfolder is a git submodule.  Hopefully this will make it easier to get set up and stay updated.
+For Talon user folder where each subfolder is a git submodule.
+ABANDONED because the problems described below were not solved and it just seems easier to have a script or one liner to copy-paste to clone or update all of the repos and the talon user folder.
 
 Related documentation at https://jacobegner.wordpress.com/2023/06/21/talon-voice-and-extras-setup-notes/
 
